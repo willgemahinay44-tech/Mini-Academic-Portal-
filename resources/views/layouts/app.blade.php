@@ -12,7 +12,7 @@
         }
         
         body {
-            background-color: #fafbfc;
+            background-color: #ffffff;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
             font-weight: 400;
             color: #2d3748;
@@ -24,48 +24,48 @@
         }
         
         .navbar {
-            background-color: #ffffff;
-            border-bottom: 1px solid #e2e8f0;
-            box-shadow: none;
+            background-color: #800000;
+            border-bottom: none;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.15);
             padding: 16px 0;
         }
         
         .navbar-brand {
             font-weight: 600;
-            color: #1a202c !important;
+            color: #ffffff !important;
             font-size: 18px;
         }
         
         .navbar a {
-            color: #4a5568 !important;
+            color: #f9fafb !important;
             margin-right: 20px;
             font-weight: 400;
             transition: color 0.2s;
         }
         
         .navbar a:hover {
-            color: #1a202c !important;
+            color: #ffe6e6 !important;
         }
         
         .container {
             margin-top: 30px;
-            background-color: white;
+            background-color: #ffffff;
             padding: 30px;
             border-radius: 6px;
-            border: 1px solid #e2e8f0;
-            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+            border: 1px solid #f1d6d6;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
         }
         
         .card {
-            border: 1px solid #e2e8f0;
+            border: 1px solid #f1d6d6;
             border-radius: 6px;
-            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
             transition: all 0.2s ease;
         }
         
         .card:hover {
-            border-color: #cbd5e0;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+            border-color: #e0b3b3;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.12);
         }
         
         .card-body {
@@ -82,24 +82,24 @@
         }
         
         .btn-primary {
-            background-color: #3182ce;
-            border-color: #3182ce;
+            background-color: #800000;
+            border-color: #800000;
         }
         
         .btn-primary:hover {
-            background-color: #2c5aa0;
-            border-color: #2c5aa0;
+            background-color: #5c0000;
+            border-color: #5c0000;
         }
         
         .btn-secondary {
-            background-color: #e2e8f0;
-            border-color: #e2e8f0;
-            color: #4a5568;
+            background-color: #ffffff;
+            border-color: #800000;
+            color: #800000;
         }
         
         .btn-secondary:hover {
-            background-color: #cbd5e0;
-            border-color: #cbd5e0;
+            background-color: #ffe6e6;
+            border-color: #5c0000;
         }
         
         .btn-danger {
@@ -138,8 +138,8 @@
         }
         
         .form-control:focus, .form-select:focus {
-            border-color: #3182ce;
-            box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.1);
+            border-color: #800000;
+            box-shadow: 0 0 0 3px rgba(128, 0, 0, 0.2);
         }
         
         .form-label {

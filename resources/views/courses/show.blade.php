@@ -66,7 +66,7 @@
     </div>
 </div>
 
-<!-- Enrollment Modal -->
+
 <div class="modal fade" id="enrollModal" tabindex="-1">
     <div class="modal-dialog">
         <div class="modal-content" style="border: 1px solid #e2e8f0;">

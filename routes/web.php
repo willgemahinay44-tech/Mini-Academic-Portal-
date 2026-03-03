@@ -6,7 +6,7 @@ use App\Http\Controllers\CourseController;
 use App\Http\Controllers\EnrollmentController;
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->route('students.index');
 });
 
 // Student routes

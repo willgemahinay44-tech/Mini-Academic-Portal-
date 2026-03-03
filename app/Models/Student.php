@@ -16,6 +16,7 @@ class Student extends Model
         'email'
     ];
 
+    // Many-to-many relationship with Course
     public function courses()
     {
         return $this->belongsToMany(Course::class, 'enrollments')

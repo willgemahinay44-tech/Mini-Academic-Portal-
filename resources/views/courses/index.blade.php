@@ -39,7 +39,7 @@
     @endforeach
 </div>
 
-<!-- Add Course Modal -->
+
 <div class="modal fade" id="addCourseModal" tabindex="-1">
     <div class="modal-dialog">
         <div class="modal-content" style="border:1px solid #e2e8f0;">
@@ -102,7 +102,6 @@ document.addEventListener('DOMContentLoaded', function () {
             const data = await res.json();
             const course = data.course;
 
-            // create card HTML
             const container = document.querySelector('.row');
             const col = document.createElement('div');
             col.className = 'col-md-4 mb-4';
@@ -133,15 +132,15 @@ document.addEventListener('DOMContentLoaded', function () {
             `;
             container.prepend(col);
 
-            // hide modal
+            
             const modalEl = document.getElementById('addCourseModal');
             const modal = bootstrap.Modal.getInstance(modalEl) || new bootstrap.Modal(modalEl);
             modal.hide();
 
-            // reset form
+          
             form.reset();
 
-            // show temporary success alert
+            
             const containerDiv = document.querySelector('.container');
             const alert = document.createElement('div');
             alert.className = 'alert alert-success';
