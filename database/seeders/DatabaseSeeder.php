@@ -16,13 +16,15 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(10)->create();
-        User::firstOrCreate([
-            'email' => 'test@example.com'
-        ], [
-            'name' => 'Test User',
-            'password' => bcrypt('password')
-        ]);
+        // Users you can use to log in from the frontend (Mini-Academic-Portal)
+        User::firstOrCreate(
+            ['email' => 'test@example.com'],
+            ['name' => 'Test User', 'password' => bcrypt('password')]
+        );
+        User::firstOrCreate(
+            ['email' => 'will@gmail.com'],
+            ['name' => 'Will User', 'password' => bcrypt('willchill')]
+        );
 
         // Create sample students if the students table and columns exist
         if (Schema::hasTable('students') && Schema::hasColumn('students', 'student_number')) {
